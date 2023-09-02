@@ -22,10 +22,11 @@ class _MyAppState extends State<MyApp> {
           title: Text('8ball Game'),
           backgroundColor: Colors.red,
         ),
-        body: Center(
-          child: Row(
-            children: <Widget>[
-              Expanded(
+        body: Column(
+          children: <Widget>[
+            Container(child: Text('Make a wish and click on the Ball',style: TextStyle(fontWeight: FontWeight.bold),),),
+            Expanded(
+              child: Center(
                 child: TextButton(
                   child: Container(
                     child: Image.asset('images/ball$sel.png'),
@@ -36,8 +37,8 @@ class _MyAppState extends State<MyApp> {
                   },
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
